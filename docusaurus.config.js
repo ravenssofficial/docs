@@ -11,10 +11,10 @@ const config = {
     v4: true,
   },
 
-  url: 'https://realravenss.github.io',
+  url: 'https://ravenssofficial.github.io',
   baseUrl: '/realravenss-docs/',
 
-  organizationName: 'realravenss', 
+  organizationName: 'ravenssofficial', 
   projectName: 'realravenss-docs', 
 
   onBrokenLinks: 'warn',
