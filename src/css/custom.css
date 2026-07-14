@@ -16,18 +16,83 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
-/* podešavanja za dark mod (ovo tebi treba) */
+/* podešavanja za dark mod */
 [data-theme='dark'] {
-  --ifm-background-color: #000000; /* skroz crna pozadina */
-  --ifm-navbar-background-color: #09090b; /* tamna navigacija na vrhu */
-  --ifm-menu-color: #a1a1aa; /* siva slova u meniju sa strane */
-  --ifm-menu-color-active: #c084fc; /* svetlo ljubičasta za aktivnu stranu */
-  --ifm-menu-color-background-active: rgba(168, 85, 247, 0.15); /* blaga ljubičasta pozadina iza aktivnog texta */
-  --ifm-heading-color: #fafafa;
-  --ifm-toc-link-color: #71717a;
+  --ifm-background-color: #000000 !important; /* skroz crna pozadina */
+  --ifm-navbar-background-color: #09090b !important; /* tamna navigacija na vrhu */
+  --ifm-menu-color: #a1a1aa !important; /* siva slova u meniju sa strane */
+  --ifm-menu-color-active: #c084fc !important; /* svetlo ljubičasta za aktivnu stranu */
+  --ifm-menu-color-background-active: rgba(168, 85, 247, 0.15) !important;
+  --ifm-heading-color: #fafafa !important;
+  --ifm-toc-link-color: #71717a !important;
+
+  /* SREĐIVANJE KARTICA - tamna pozadina umesto agresivne sive */
+  --ifm-card-background-color: #09090b !important;
+
+  /* Menjamo docusaurus sive varijable za footer unutar dark moda */
+  --ifm-footer-background-color: #09090b !important;
+  --ifm-footer-color: #52525b !important;
+  --ifm-footer-link-color: #71717a !important;
+  --ifm-footer-link-hover-color: #c084fc !important;
 }
 
-/* bolesni gradient za glavne dugmiće na početnoj (kao onaj sa vape screenshota) */
+/* Dodatno fino podešavanje za ivice kartica da se savršeno uklope */
+[data-theme='dark'] .card {
+  border: 1px solid #18181b !important;
+  border-radius: 8px !important;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+[data-theme='dark'] .card:hover {
+  background-color: #121214 !important; /* blago svetlija na hover */
+  border-color: rgba(168, 85, 247, 0.3) !important; /* suptilan ljubičasti sjaj na hover */
+}
+
+/* SREĐIVANJE TABOVA - agresivna siva leti napolje */
+[data-theme='dark'] .tabs {
+  border-bottom: 1px solid #18181b !important;
+}
+
+[data-theme='dark'] .tabs__item {
+  color: #52525b !important; /* mnogo tamnija, suptilna siva za neaktivne */
+  padding: 0.6rem 1.2rem !important;
+  font-weight: 500 !important;
+  background-color: transparent !important;
+}
+
+[data-theme='dark'] .tabs__item:hover {
+  color: #a1a1aa !important;
+  background-color: rgba(255, 255, 255, 0.02) !important;
+}
+
+[data-theme='dark'] .tabs__item--active {
+  color: #c084fc !important; /* aktivni tab dobija tvoju ljubičastu */
+  border-bottom-color: #a855f7 !important;
+  background-color: transparent !important;
+}
+
+/* SREĐIVANJE FOOTERA - kompletno stapanje i tamniji tekst */
+[data-theme='dark'] .footer {
+  background-color: #09090b !important;
+  border-top: 1px solid #18181b !important;
+  padding: 3rem 1rem !important;
+}
+
+[data-theme='dark'] .footer__title {
+  color: #fafafa !important;
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+}
+
+[data-theme='dark'] .footer__link-item {
+  color: #71717a !important;
+}
+
+[data-theme='dark'] .footer__link-item:hover {
+  color: #c084fc !important;
+}
+
+/* bolesni gradient za glavne dugmiće na početnoj */
 .button--primary {
   background: linear-gradient(135deg, #a855f7 0%, #6b21a8 100%) !important;
   border: none !important;
@@ -41,7 +106,7 @@
   box-shadow: 0 6px 20px rgba(168, 85, 247, 0.6);
 }
 
-/* dodavanje gradient linije na vrhu navigacije za bolji vizuelni efekat */
+/* dodavanje gradient linije na vrhu navigacije */
 .navbar {
   border-bottom: 1px solid rgba(168, 85, 247, 0.2);
 }
@@ -50,20 +115,9 @@
 code {
   background-color: #18181b !important;
   border: 1px solid #27272a !important;
-  color: #f472b6 !important; /* roze-ljubičasti detalji za inline kod */
-}
-/* uklanja ikonu za fajl */
-.card .card__icon {
-  display: none !important;
+  color: #f472b6 !important;
 }
 
-/* centrira tekst i sklanja bold */
-.card .card__title {
-  text-align: center !important;
-  font-weight: normal !important;
-}
-
-/* ako hoces da bude bas cisto i bez opisa */
-.card p {
-  display: none !important;
+[data-theme='dark'] .theme-logo {
+  filter: invert(1) !important;
 }
