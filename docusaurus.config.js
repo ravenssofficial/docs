@@ -44,6 +44,7 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      // ovde je sad ubačena slika za embed (globalni og:image)
       image: 'img/channels4_profile.jpg',
       colorMode: {
         respectPrefersColorScheme: true,
