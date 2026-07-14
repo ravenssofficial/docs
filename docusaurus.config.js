@@ -20,15 +20,15 @@ const config = {
   },
 
   // Set the production url of your site here
-  url: 'https://ravenssofficial.github.io',
+  url: 'https://realravenss.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/realravenss-docs/',
 
   // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'ravenssofficial', // Your GitHub org/user name.
-  projectName: 'realravenss-docs', // Your repo name.
+  organizationName: 'realravenss', 
+  projectName: 'realravenss-docs', 
+  deploymentBranch: 'gh-pages',
 
   onBrokenLinks: 'warn',
 
@@ -44,11 +44,11 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          routeBasePath: '/',
+          routeBasePath: '/', // docs je sada početna strana
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/realravenss/realravenss-docs/tree/main/',
         },
-        blog: false,
+        blog: false, // potpuno ugašen blog
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -70,12 +70,16 @@ const config = {
           alt: '',
           src: 'img/logo.png',
         },
-        items: [], 
+        items: [], // skroz čist gornji meni bez github linkova i tutoriala
       },
       footer: {
         style: 'dark',
-        links: [], 
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        links: [], // potpuno prazni footer linkovi
+        copyright: `Made by Pogama from RavenSS © ${new Date().getFullYear()}`, // tvoj potpis
+      },
+      prism: {
+        theme: prismThemes.github,
+        darkTheme: prismThemes.dracula,
       },
     }),
 };
