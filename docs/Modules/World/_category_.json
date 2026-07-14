@@ -1,0 +1,8 @@
+{
+  "label": "World",
+  "position": 7,
+  "link": {
+    "type": "generated-index",
+    "description": "Modules designed to manipulate and interact with the game world for various advantages"
+  }
+}

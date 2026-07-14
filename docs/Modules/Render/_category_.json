@@ -1,0 +1,8 @@
+{
+  "label": "Render",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "Modules designed to allow you to see things you normally wouldn't be able to, from seeing through walls to seeing entities through blocks. These modules are usually completely undetectable."
+  }
+}

@@ -52,3 +52,18 @@ code {
   border: 1px solid #27272a !important;
   color: #f472b6 !important; /* roze-ljubičasti detalji za inline kod */
 }
+/* uklanja ikonu za fajl */
+.card .card__icon {
+  display: none !important;
+}
+
+/* centrira tekst i sklanja bold */
+.card .card__title {
+  text-align: center !important;
+  font-weight: normal !important;
+}
+
+/* ako hoces da bude bas cisto i bez opisa */
+.card p {
+  display: none !important;
+}

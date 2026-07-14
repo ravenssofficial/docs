@@ -1,0 +1,8 @@
+{
+  "label": "Network",
+  "position": 8,
+  "link": {
+    "type": "generated-index",
+    "description": "Modules designed to exploit higher latencies to bypass anticheats and give you an unfair advantage."
+  }
+}
