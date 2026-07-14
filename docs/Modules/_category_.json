@@ -2,6 +2,7 @@
   "label": "Modules",
   "position": 3,
   "link": {
-    "type": "generated-index"
+    "type": "generated-index",
+    "description": "Here you can find **modules** from **ghost clients** and their **rating** based on **detectability.**"
   }
 }
