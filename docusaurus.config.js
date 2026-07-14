@@ -3,7 +3,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'realravenss',
+  title: 'RavenSS',
   tagline: 'docs',
   favicon: 'img/new.png',
 
