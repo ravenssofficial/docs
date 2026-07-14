@@ -52,7 +52,7 @@ const config = {
         title: '',
         logo: {
           alt: '',
-          src: 'img/logo.png', // pazi samo da imas logo.png u img folderu ili obrisi i ovo
+          src: 'img/logo.svg', // pazi samo da imas logo.png u img folderu ili obrisi i ovo
         },
         items: [], 
       },
