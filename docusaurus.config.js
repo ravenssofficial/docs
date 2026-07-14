@@ -48,11 +48,18 @@ const config = {
       colorMode: {
         respectPrefersColorScheme: true,
       },
+      // OVAJ DEO BRŠE DODATAK | realravenss IZ NASLOVA
+      metadata: [
+        { name: 'twitter:card', content: 'summary' }
+      ],
+      // Menjamo podrazumevani šablon za naslov stranice tako da prikazuje samo naslov dokumenta
+      titleDelimiter: ' ', // Stavljamo običan razmak umesto "|" crte da se ne vidi sufiks
+      
       navbar: {
         title: '',
         logo: {
           alt: '',
-          src: 'img/logo.png', // pazi samo da imas logo.png u img folderu ili obrisi i ovo
+          src: 'img/logo.png', 
         },
         items: [], 
       },
