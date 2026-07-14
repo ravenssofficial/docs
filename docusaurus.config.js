@@ -20,14 +20,14 @@ const config = {
   },
 
   // Set the production url of your site here
-  url: 'https://realravenss.github.io',
+  url: 'https://ravenssofficial.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/realravenss-docs/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'realravenss', // Your GitHub org/user name.
+  organizationName: 'ravenssofficial', // Your GitHub org/user name.
   projectName: 'realravenss-docs', // Your repo name.
 
   onBrokenLinks: 'warn',
