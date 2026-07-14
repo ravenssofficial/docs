@@ -5,7 +5,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: 'realravenss',
   tagline: 'docs',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/new.png',
 
   future: {
     v4: true,
@@ -52,7 +52,7 @@ const config = {
         title: '',
         logo: {
           alt: '',
-          src: 'img/logo.svg', // pazi samo da imas logo.png u img folderu ili obrisi i ovo
+          src: 'img/logo.png', // pazi samo da imas logo.png u img folderu ili obrisi i ovo
         },
         items: [], 
       },
