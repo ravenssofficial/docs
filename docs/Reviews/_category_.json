@@ -1,8 +1,8 @@
 {
   "label": "Reviews",
-  "position": 3,
+  "position": 5,
   "link": {
     "type": "generated-index",
-    "description": "You can find our **reviews** of **various clients** here."
+    "description": "You can find our reviews of various clients here."
   }
 }
