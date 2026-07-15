@@ -1,0 +1,45 @@
+---
+id: SprintReset
+title: SprintReset
+sidebar_label: SprintReset
+description: Automatically resets your sprint to maximize knockback
+---
+
+# SprintReset <a href="/realravenss-docs/#our-safety-rating-system" style={{textDecoration: 'none'}}><span style={{backgroundColor: '#1e1e2e', color: '#10b981', padding: '3px 8px', borderRadius: '12px', fontSize: '0.35em', verticalAlign: 'super', marginLeft: '8px', border: '1px solid #10b981', fontWeight: 'bold', display: 'inline-flex', alignItems: 'center', gap: '5px', cursor: 'pointer'}}><img src="/realravenss-docs/img/safe.svg" style={{width: '20px', height: '20px', display: 'block'}} /> Safe</span></a>
+
+<div className="hero__subtitle" style={{fontSize: '1.15rem', color: '#a1a1aa', lineHeight: '1.6', marginBottom: '2rem'}}>
+  Automatically resets your sprint after hitting an opponent to constantly deal maximum knockback.
+</div>
+
+---
+
+## Overview
+
+In Minecraft PvP, your very first hit while sprinting deals significantly more knockback. SprintReset automates this mechanic, allowing you to easily trap opponents in combos without having to manually reset your sprint.
+
+This module features two distinct modes depending on your playstyle:
+
+### Tapping Modes (W-Tap, S-Tap, Shift-Tap)  
+These modes mimic legitimate keyboard inputs by briefly stopping your forward momentum or sneaking for a split second after a hit to reset your sprint.
+
+### Packet Mode (No-Stop)  
+This mode instantly resets your sprint packet without slowing down your character at all. Even though this might sound blatant, it is completely safe and bypasses almost every major anticheat.
+
+---
+
+:::warning[Toggle-Sprint Compatibility]
+
+To ensure SprintReset functions correctly, you must not use external toggle-sprint mods.  
+Instead, make sure to pair it with the built-in [Sprint](/realravenss-docs/Modules/Movement/Sprint) module from your client.
+
+:::
+
+---
+
+:::info[Vape V4 Configuration]
+
+If you are a Vape v4 user, this feature is not a standalone module. Instead, you can find it as the sprint reset option inside the [KeepSprint](/realravenss-docs/Modules/Movement/KeepSprint) module.  
+
+For maximum safety, make sure to set the speed multiplier to 0.6x.
+
+:::
