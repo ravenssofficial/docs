@@ -1,13 +1,38 @@
 ---
 id: Reach
 title: Reach
+sidebar_label: Reach
 description: Extends the distance you can attack from.
 ---
 
-# Reach
+# Reach <a href="/realravenss-docs/#our-safety-rating-system" style={{textDecoration: 'none'}}><span style={{backgroundColor: '#1e1e2e', color: '#ef4444', padding: '3px 8px', borderRadius: '12px', fontSize: '0.35em', verticalAlign: 'super', marginLeft: '8px', border: '1px solid #ef4444', fontWeight: 'bold', display: 'inline-flex', alignItems: 'center', gap: '5px', cursor: 'pointer'}}><img src="/realravenss-docs/img/blatant.svg" style={{width: '20px', height: '20px', display: 'block'}} /> Blatant</span></a>
 
-:::danger
+<div className="hero__subtitle" style={{fontSize: '1.15rem', color: '#a1a1aa', lineHeight: '1.6', marginBottom: '2rem'}}>
+  Extends your maximum attack range beyond the default vanilla limit.
+</div>
 
-This module is detected on almost every anticheat on every value. Avoid using it.
+---
+
+:::danger[Extremely Detectable]
+
+This module is detected on almost every anticheat at virtually any value.  
+Modern anticheats continuously track player coordinates and ping, making even small reach increments extremely easy to flag.  
+Avoid using this module completely.
+
+:::
+
+### How Anticheats Catch Reach
+
+Unlike other modules that mimic human input, reach directly breaks the physical limits of the game, making it a primary target for server-side checks.
+
+*   **Advanced Calculations:** Anticheats calculate the exact distance between your hitbox and the enemy's hitbox at the millisecond your hit registers.
+*   **Lag Compensation:** While higher ping can sometimes make legitimate hits look long, anticheats account for latency. 
+
+---
+
+:::tip
+
+If you want a safer way to extend your hit distance, enable multipoint in AimAssist settings.  
+It aims to the closest point on your enemy's hitbox, letting you get perfect 3.0 block hits more often
 
 :::

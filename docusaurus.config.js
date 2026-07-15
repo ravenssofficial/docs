@@ -41,6 +41,21 @@ const config = {
     ],
   ],
 
+  // lokalni search plugin bez problematičnog tipa
+  plugins: [
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      ({
+        hashed: true,
+        language: ["en"],
+        indexDocs: true,
+        indexBlog: false, 
+        indexPages: false,
+        docsRouteBasePath: "/", 
+      }),
+    ],
+  ],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({

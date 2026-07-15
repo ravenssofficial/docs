@@ -1,39 +1,54 @@
 ---
 id: Velocity
 title: Velocity
+sidebar_label: Velocity
 description: Reduces taken knockback
 ---
 
-# Velocity
-This module has **multiple modes** on most clients:
+# Velocity <a href="/realravenss-docs/#our-safety-rating-system" style={{textDecoration: 'none'}}><span style={{backgroundColor: '#1e1e2e', color: '#f59e0b', padding: '3px 8px', borderRadius: '12px', fontSize: '0.35em', verticalAlign: 'super', marginLeft: '8px', border: '1px solid #f59e0b', fontWeight: 'bold', display: 'inline-flex', alignItems: 'center', gap: '5px', cursor: 'pointer'}}><img src="/realravenss-docs/img/risky.svg" style={{width: '20px', height: '20px', display: 'block'}} /> Risky</span></a>
 
-## Vanilla/Normal
-:::danger
+<div className="hero__subtitle" style={{fontSize: '1.15rem', color: '#a1a1aa', lineHeight: '1.6', marginBottom: '2rem'}}>
+  Reduces or completely cancels the knockback you take from attacks and projectiles.
+</div>
 
-This mode is **highly detectable** on anticheats at any value.
+---
 
-:::
+### Modes and Detection
 
-## Lag
+This module has multiple modes on most clients, each carrying a different level of risk:
 
-Uses **lag** to make you take less knockback, especially during combos.
+#### Vanilla / Normal
+:::danger[Highly Detectable]
 
-As any other **lag-based** mode, it's risky on stricter anticheats.
-
-:::info
-
-On certain clients, this will be a **standalone module** called **KnockbackDelay**
+This mode directly modifies your motion packets. It is highly detectable on anticheats at any value. Avoid using it.
 
 :::
 
-## JumpReset
+#### Lag
+Uses network lag to delay your knockback packets, making you take less knockback, especially while you are being comboed.
+As with any other lag-based method, this is risky on top-tier anticheats
 
-Jumps when you get hit to reduce knockback.
+:::info[Standalone Module]
 
-As long as you use a chance between 20-35% you should be fine. If possible, lowering the accuracy would work very well too.
+On certain clients, this feature will be a standalone module called **KnockbackDelay**.
 
-:::info
+:::
 
-On certain clients, this will be a **standalone module.**
+#### JumpReset
+Automatically jumps the exact tick you take damage to redirect and reduce your knockback.  
+As long as you keep your chance between 20-35%, you should be fine.  
+If your client allows you to lower the accuracy of the jumps, do that as well.
+
+:::info[Standalone Module]
+
+On certain clients, this feature will be a standalone module called **JumpReset**.
+
+:::
+
+---
+
+:::tip
+
+If you want to look completely legitimate, and avoid bans, stick to JumpReset.
 
 :::

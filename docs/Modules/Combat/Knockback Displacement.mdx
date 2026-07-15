@@ -1,16 +1,39 @@
 ---
 id: Knockback Displacement
 title: Knockback Displacement
+sidebar_label: Knockback Displacement
 description: Flicks to the side before attacking to manipulate knockback
 ---
 
-# Knockback Displacement
-This module reproduces **human behaviour**, but with bad settings it can get you **staff banned.**
+# Knockback Displacement <a href="/realravenss-docs/#our-safety-rating-system" style={{textDecoration: 'none'}}><span style={{backgroundColor: '#1e1e2e', color: '#f59e0b', padding: '3px 8px', borderRadius: '12px', fontSize: '0.35em', verticalAlign: 'super', marginLeft: '8px', border: '1px solid #f59e0b', fontWeight: 'bold', display: 'inline-flex', alignItems: 'center', gap: '5px', cursor: 'pointer'}}><img src="/realravenss-docs/img/risky.svg" style={{width: '20px', height: '20px', display: 'block'}} /> Risky</span></a>
 
-Make sure to use a **higher delay** to look more legit.
+<div className="hero__subtitle" style={{fontSize: '1.15rem', color: '#a1a1aa', lineHeight: '1.6', marginBottom: '2rem'}}>
+  Flicks your camera to the side immediately before hitting an opponent to redirect their knockback.
+</div>
 
-:::tip
+---
+:::info[Different Names]
 
-If you don't want the enemies to see you flicking, you can turn on the blink/hide rotation from players option.
+On some clients, this module is also known as **HitFlick.**
+
+:::
+
+---
+
+### Mechanics and Configuration
+
+This module automates the high-level PvP technique where looking away during a sprint-hit alters the direction your enemy will take knockback.  
+While it mimics real human mechanics, aggressive settings will look highly unnatural.
+
+*   **Flick Delay:** To keep your movements looking organic, make sure to use a higher delay (e.g. 450ms)
+*   **Angles:** Keep the displacement angles realistic, don't go over 90°.
+*   **Staff Bans:** With certain settings, this module can look incredibly obvious, leading to a staff ban.
+
+---
+
+:::tip[Hide Your Rotations]
+
+If you don't want other players or staff to see your character flicking, enable this option in the module's settings.   
+It chokes your packets right before flicking and unchokes them as the module rotates you back.
 
 :::
