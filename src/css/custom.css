@@ -121,3 +121,8 @@ code {
 [data-theme='dark'] .theme-logo {
   filter: invert(1) !important;
 }
+
+.anchorWithHeading_node_modules-\@docusaurus-theme-classic-lib-theme-Heading-styles-module,
+.hash-link {
+  display: none !important;
+}

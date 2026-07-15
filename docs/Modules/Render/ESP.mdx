@@ -1,0 +1,36 @@
+---
+id: ESP
+title: ESP
+sidebar_label: ESP
+description: Outlines players and entities through walls
+---
+
+# ESP <a href="/realravenss-docs/#our-safety-rating-system" style={{textDecoration: 'none'}}><span style={{backgroundColor: '#1e1e2e', color: '#10b981', padding: '3px 8px', borderRadius: '12px', fontSize: '0.35em', verticalAlign: 'super', marginLeft: '8px', border: '1px solid #10b981', fontWeight: 'bold', display: 'inline-flex', alignItems: 'center', gap: '5px', cursor: 'pointer'}}><img src="/realravenss-docs/img/safe.svg" style={{width: '20px', height: '20px', display: 'block'}} /> Safe</span></a>
+
+<div className="hero__subtitle" style={{fontSize: '1.15rem', color: '#a1a1aa', lineHeight: '1.6', marginBottom: '2rem'}}>
+  Renders a visual outline, box, or skeleton around players and entities through solid walls.
+</div>
+
+---
+
+### Overview
+
+ESP (Extrasensory Perception) is a core render module that gives you full wallhack capabilities. It highlights other players, or mobs through solid terrain, allowing you to easily track their movement, distance, and health.
+
+Since this is a purely client-side visual module, it is **100% undetectable** on any server or anticheat.
+
+---
+
+### Common Modes
+
+* **Box:** Draws a 2D or 3D box around targets. Very lightweight and FPS-friendly.
+* **Skeleton:** Renders the actual bone structure of players to show their exact posture and orientation.
+* **Outline:** Highlights the entire character model with a glowing edge.
+
+---
+
+:::tip[FPS Drops]
+
+If you are playing on a low-end PC, stick to the **Box** or **2D** mode. Outline shaders and skeleton renders can sometimes drop your frames in lobby areas with tons of players.
+
+:::

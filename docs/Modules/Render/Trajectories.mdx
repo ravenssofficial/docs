@@ -1,0 +1,30 @@
+---
+id: Trajectories
+title: Trajectories
+sidebar_label: Trajectories
+description: Predicts and displays the flight paths of projectiles
+---
+
+# Trajectories <a href="/realravenss-docs/#our-safety-rating-system" style={{textDecoration: 'none'}}><span style={{backgroundColor: '#1e1e2e', color: '#10b981', padding: '3px 8px', borderRadius: '12px', fontSize: '0.35em', verticalAlign: 'super', marginLeft: '8px', border: '1px solid #10b981', fontWeight: 'bold', display: 'inline-flex', alignItems: 'center', gap: '5px', cursor: 'pointer'}}><img src="/realravenss-docs/img/safe.svg" style={{width: '20px', height: '20px', display: 'block'}} /> Safe</span></a>
+
+<div className="hero__subtitle" style={{fontSize: '1.15rem', color: '#a1a1aa', lineHeight: '1.6', marginBottom: '2rem'}}>
+  Predicts and displays the exact flight path of arrows, pearls, and other throwable items.
+</div>
+
+---
+
+### Overview
+
+Trajectories calculates and renders a visual line showing the exact flight path of a projectile before you even fire it.  
+It also shows the path of enemy projectiles once they have been thrown or shot, letting you see exactly where they will land.
+
+Since this module only performs local physics calculations based on your current aiming angle or loaded entity movement, it is 100% safe and undetectable.
+
+---
+
+:::info[Alternative Names]
+
+While this features both your own and enemy flight paths in one place, some clients split these features up.  
+The function that tracks enemy projectiles mid-air is often found as a standalone module called **Projectiles.**
+
+:::
