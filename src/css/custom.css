@@ -126,3 +126,28 @@ code {
 .hash-link {
   display: none !important;
 }
+
+/* Sređivanje aktivnog linka - isključivo na krajnjim fajlovima (izbacuje kategorije/foldere) */
+.menu__list-item:not(.menu__list-item--category) > .menu__link--active {
+  position: relative !important;
+  padding-left: 24px !important; /* pravi prostor za pilulu */
+  transition: all 0.2s ease-in-out;
+}
+
+/* Pravljenje vertikalne pilule samo za aktivne fajlove */
+.menu__list-item:not(.menu__list-item--category) > .menu__link--active::before {
+  content: "";
+  position: absolute;
+  left: 8px; /* pozicija pilule unutar kontejnera */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px; /* debljina pilule */
+  height: 16px; /* visina pilule */
+  background-color: #c084fc !important; /* koristi tvoju aktivnu svetlo ljubičastu boju */
+  border-radius: 99px !important; /* skroz zaobljene ivice */
+}
+
+/* Hover efekat za linkove u meniju */
+.menu__link:hover {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+}
