@@ -1,0 +1,40 @@
+---
+id: Teams
+title: Teams
+sidebar_label: Teams
+description: Prevents your combat modules from targeting teammates
+---
+
+# Teams <a href="/realravenss-docs/#our-safety-rating-system" style={{textDecoration: 'none'}}><span style={{backgroundColor: '#1e1e2e', color: '#10b981', padding: '3px 8px', borderRadius: '12px', fontSize: '0.35em', verticalAlign: 'super', marginLeft: '8px', border: '1px solid #10b981', fontWeight: 'bold', display: 'inline-flex', alignItems: 'center', gap: '5px', cursor: 'pointer'}}><img src="/realravenss-docs/img/safe.svg" style={{width: '20px', height: '20px', display: 'block'}} /> Safe</span></a>
+
+<div className="hero__subtitle" style={{fontSize: '1.15rem', color: '#a1a1aa', lineHeight: '1.6', marginBottom: '2rem'}}>
+  Safeguards your allies by preventing automated combat modules from attacking teammates.
+</div>
+
+---
+
+## Overview
+
+When playing team-based game modes, you don't want modules like KillAura or TriggerBot to accidentally target your allies. Teams filters out your teammates from your client's targeting list, keeping your focus entirely on the enemy.
+
+The module usually identifies teammates using two main methods:
+
+*   **Teams by Color:** Distinguishes allies based on the color of their username nametags.
+*   **Teams by Server:** Utilizes the server's native scoreboard and team systems to accurately track who is on your side.
+
+---
+
+:::warning[Practice Servers Compatibility]
+
+On many practice servers (such as Boxing or FFA modes), players are often assigned the exact same nametag color or placed in the same server-side team despite fighting each other.  
+In these scenarios, you must disable the Teams module to ensure your modules can actually target and hit your opponents.
+
+:::
+
+---
+
+:::info[Alternative Names]
+
+On some clients, [AntiBot](/realravenss-docs/Modules/Utility/AntiBot) and Teams are combined into one module called **TargetFilter**
+
+:::

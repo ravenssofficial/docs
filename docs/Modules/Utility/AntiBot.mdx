@@ -1,0 +1,31 @@
+---
+id: AntiBot
+title: AntiBot
+sidebar_label: AntiBot
+description: Prevents your client from targeting server-generated bot entities
+---
+
+# AntiBot <a href="/realravenss-docs/#our-safety-rating-system" style={{textDecoration: 'none'}}><span style={{backgroundColor: '#1e1e2e', color: '#10b981', padding: '3px 8px', borderRadius: '12px', fontSize: '0.35em', verticalAlign: 'super', marginLeft: '8px', border: '1px solid #10b981', fontWeight: 'bold', display: 'inline-flex', alignItems: 'center', gap: '5px', cursor: 'pointer'}}><img src="/realravenss-docs/img/safe.svg" style={{width: '20px', height: '20px', display: 'block'}} /> Safe</span></a>
+
+<div className="hero__subtitle" style={{fontSize: '1.15rem', color: '#a1a1aa', lineHeight: '1.6', marginBottom: '2rem'}}>
+  Filters out artificial entities spawned by anticheats to protect you from automatic bans.
+</div>
+
+---
+
+## Overview
+
+Modern anticheats (such as Watchdog on Hypixel) sometimes spawn invisible or rapidly moving bot entities around you during combat. These bots are designed to trick combat modules like KillAura into attacking them, which triggers an instant ban.
+
+AntiBot analyzes entity data such as ping, tab list presence, movement patterns, and entity IDs to distinguish real players from anticheat bots. Once identified, it prevents your combat modules from targeting or interacting with them entirely.
+
+Always keep AntiBot enabled whenever you are using any automated combat modules.  
+It is completely safe and recommended to use and can protect you from bans.
+
+---
+
+:::info[Alternative Names]
+
+On some clients, AntiBot and [Teams](/realravenss-docs/Modules/Utility/Teams) are combined into one module called **TargetFilter**
+
+:::
