@@ -2,7 +2,7 @@
 id: Velocity
 title: Velocity
 sidebar_label: Velocity
-description: Reduces taken knockback
+description: Reduces or completely cancels taken knockback
 ---
 
 # Velocity <a href="/realravenss-docs/#our-safety-rating-system" style={{textDecoration: 'none'}}><span style={{backgroundColor: '#1e1e2e', color: '#f1c40f', padding: '3px 8px', borderRadius: '12px', fontSize: '0.35em', verticalAlign: 'super', marginLeft: '8px', border: '1px solid #f1c40f', fontWeight: 'bold', display: 'inline-flex', alignItems: 'center', gap: '5px', cursor: 'pointer'}}><img src="/realravenss-docs/img/risky.svg" style={{width: '20px', height: '20px', display: 'block'}} /> Risky</span></a>
@@ -13,42 +13,52 @@ description: Reduces taken knockback
 
 ---
 
-### Modes and Detection
+## Overview
 
-This module has multiple modes on most clients, each carrying a different level of risk:
+Velocity alters how your character responds to incoming hit packets. By lowering or stopping vertical and horizontal knockback, it allows you to maintain your positioning and push through enemy trades easily. 
 
-#### Vanilla / Normal
+Safety depends entirely on the method you use. Directly changing movement data will trigger instant server-side flags, while simulating player mechanics provides much better concealment.
+
+---
+
+## Modes & Detection
+
+Most clients offer several ways to handle knockback reduction, each carrying a different level of risk:
+
+### Vanilla / Normal
+
+This mode directly modifies your motion packets to reduce the knockback you take.
+
 :::danger[Highly Detectable]
 
-This mode directly modifies your motion packets. It is highly detectable on anticheats at any value. Avoid using it.
+This is highly detectable on modern anticheats at almost any percentage. Avoid using it on servers with an anticheat.
 
 :::
 
-#### Lag
-Uses network lag to delay your knockback packets, making you take less knockback, especially while you are being comboed.
-As with any other lag-based method, this is risky on top-tier anticheats
+### Lag
+
+This method uses network manipulation to delay your incoming knockback packets. It effectively reduces your knockback, especially while you are stuck in an enemy combo. Like any other lag-based method, this remains risky against top-tier anticheats.
 
 :::info[Standalone Module]
 
-On certain clients, this feature will be a standalone module called **KnockbackDelay**.
+On certain clients, this specific functionality is broken out into a standalone module called **KnockbackDelay**.
 
 :::
 
-#### JumpReset
-Automatically jumps the exact tick you take damage to redirect and reduce your knockback.  
-As long as you keep your chance between 20-35%, you should be fine.  
-If your client allows you to lower the accuracy of the jumps, do that as well.
+### JumpReset
+
+Automatically triggers a jump on the exact tick you take damage to naturally absorb your knockback. To stay safe on strict anticheats, keep your chance between 20%–35%. If your client features an accuracy slider for the jumps, lower it slightly to introduce human-like errors.
 
 :::info[Standalone Module]
 
-On certain clients, this feature will be a standalone module called **JumpReset**.
+On certain clients, this specific functionality is broken out into a standalone module called **JumpReset**.
 
 :::
 
 ---
 
-:::tip
+:::tip[Safety Recommendation]
 
-If you want to look completely legitimate, and avoid bans, stick to JumpReset.
+If your main goal is to look completely legitimate and avoid flags while maintaining a massive advantage, stick exclusively to the JumpReset mode.
 
 :::

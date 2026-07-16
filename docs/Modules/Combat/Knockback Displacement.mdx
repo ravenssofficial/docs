@@ -2,38 +2,42 @@
 id: Knockback Displacement
 title: Knockback Displacement
 sidebar_label: Knockback Displacement
-description: Flicks to the side before attacking to manipulate knockback
+description: Flicks to the side before attacking to redirect knockback
 ---
 
 # Knockback Displacement <a href="/realravenss-docs/#our-safety-rating-system" style={{textDecoration: 'none'}}><span style={{backgroundColor: '#1e1e2e', color: '#f1c40f', padding: '3px 8px', borderRadius: '12px', fontSize: '0.35em', verticalAlign: 'super', marginLeft: '8px', border: '1px solid #f1c40f', fontWeight: 'bold', display: 'inline-flex', alignItems: 'center', gap: '5px', cursor: 'pointer'}}><img src="/realravenss-docs/img/risky.svg" style={{width: '20px', height: '20px', display: 'block'}} /> Risky</span></a>
 
 <div className="hero__subtitle" style={{fontSize: '1.15rem', color: '#a1a1aa', lineHeight: '1.6', marginBottom: '2rem'}}>
-  Flicks your camera to the side immediately before hitting an opponent to redirect their knockback.
+  Flicks your camera to the side right before registering a hit to redirect your opponent's knockback.
 </div>
 
----
-:::info[Different Names]
+:::info[Alternative Names]
 
-On some clients, this module is also known as **HitFlick.**
+On some clients, this module is also known as **HitFlick**.
 
 :::
 
 ---
 
-### Mechanics and Configuration
+## Overview
 
-This module automates the high-level PvP technique where looking away during a sprint-hit alters the direction your enemy will take knockback.  
-While it mimics real human mechanics, aggressive settings will look highly unnatural.
+Knockback Displacement automates a high-level PvP technique where looking away immediately during a sprint-hit alters the direction of your enemy's knockback. 
 
-*   **Flick Delay:** To keep your movements looking organic, make sure to use a higher delay (e.g. 450ms)
-*   **Angles:** Keep the displacement angles realistic, don't go over 90°.
-*   **Staff Bans:** With certain settings, this module can look incredibly obvious, leading to a staff ban.
+While the module mimics real mechanical movements, aggressive settings can look incredibly obvious to spectators and staff. Safety depends heavily on keeping your rotation angles and timing realistic.
+
+---
+
+## Mechanics & Configuration
+
+* **Displacement Angles:** Avoid going over **90°** to make the flicks look believable.
+* **Flick Delay:** Keep your movements looking organic by using a higher delay between flicks (e.g., ~450ms).
+* **Staff Bans:** Using small delays or extreme angles will make your character flick erratically, making you an easy target for manual staff bans.
 
 ---
 
 :::tip[Hide Your Rotations]
 
-If you don't want other players or staff to see your character flicking, enable this option in the module's settings.   
-It chokes your packets right before flicking and unchokes them as the module rotates you back.
+If you want to hide the flicks shakes from other players and staff, enable the **Hide Rotations** option if your client supports it.  
+This setting chokes your outgoing packets right before the flick occurs and releases them only after your camera rotates back.
 
 :::

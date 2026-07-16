@@ -2,36 +2,35 @@
 id: HitSelect
 title: HitSelect
 sidebar_label: HitSelect
-description: Stops attacking dynamically to gain advantages
+description: Filters attack inputs to optimize combos
 ---
 
 # HitSelect <a href="/realravenss-docs/#our-safety-rating-system" style={{textDecoration: 'none'}}><span style={{backgroundColor: '#1e1e2e', color: '#10b981', padding: '3px 8px', borderRadius: '12px', fontSize: '0.35em', verticalAlign: 'super', marginLeft: '8px', border: '1px solid #10b981', fontWeight: 'bold', display: 'inline-flex', alignItems: 'center', gap: '5px', cursor: 'pointer'}}><img src="/realravenss-docs/img/safe.svg" style={{width: '20px', height: '20px', display: 'block'}} /> Safe</span></a>
 
 <div className="hero__subtitle" style={{fontSize: '1.15rem', color: '#a1a1aa', lineHeight: '1.6', marginBottom: '2rem'}}>
-  Stops attacking dynamically under certain conditions to optimize your hits and secure easy combos.
+  Filters your click inputs under specific conditions to improve hit registration and secure combos.
 </div>
 
 :::info[Alternative Names]
 
-In older clients, this module might be named **Combo Assist**.  
-While it has a slightly different name, it functions the exact same way.
+In older clients, this module is often called **Combo Assist**.
 
 :::
 
 ---
 
-### Mechanics and Usage
+## Overview
 
-This module is **completely undetectable** because it only filters when your client registers hits, which mimics perfect human timing.
+HitSelect controls the timing of your attacks instead of letting every click register instantly. By delaying hits until the target can get hit again, it ensures you keep as much momentum as possible.
 
-*   **Attack Timing** Instead of spamming, it will time your hits so you can keep combos while losing speed.
-*   **Knockback Reduction:** Because it makes you attack in short bursts, it will be completely 
-*   **Completely Undetectable:** Since it only controls the timing of your manual clicks, it can't be detected at all, but still offers a massive advantages.
+HitSelect is 100% safe from anticheats. Because it only filters your actual clicks, the server receives completely normal packets that look like perfect human timing.
 
 ---
 
-:::tip
+:::tip[Input Compatibility]
 
-You can freely use external autoclickers or just manually click yourself while this module is active, HitSelect will still do its job.
+HitSelect works with any input method. You can click manually or use an external Autoclicker; the module will filter the clicks properly in the background.
 
 :::
+
+---

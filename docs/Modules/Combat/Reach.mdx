@@ -2,7 +2,7 @@
 id: Reach
 title: Reach
 sidebar_label: Reach
-description: Extends the distance you can attack from.
+description: Extends your maximum attack distance
 ---
 
 # Reach <a href="/realravenss-docs/#our-safety-rating-system" style={{textDecoration: 'none'}}><span style={{backgroundColor: '#1e1e2e', color: '#ef4444', padding: '3px 8px', borderRadius: '12px', fontSize: '0.35em', verticalAlign: 'super', marginLeft: '8px', border: '1px solid #ef4444', fontWeight: 'bold', display: 'inline-flex', alignItems: 'center', gap: '5px', cursor: 'pointer'}}><img src="/realravenss-docs/img/blatant.svg" style={{width: '20px', height: '20px', display: 'block'}} /> Blatant</span></a>
@@ -13,26 +13,30 @@ description: Extends the distance you can attack from.
 
 ---
 
-:::danger[Extremely Detectable]
+:::danger[High Detection Risk]
 
-This module is detected on almost every anticheat at virtually any value.  
-Modern anticheats continuously track player coordinates and ping, making even small reach increments extremely easy to flag.  
-Avoid using this module completely.
+This module is highly flagged on almost every modern anticheat at virtually any value.  
+To keep your account safe, it is strongly recommended to avoid using this module entirely.
 
 :::
 
-### How Anticheats Catch Reach
+---
 
-Unlike other modules that mimic human input, reach directly breaks the physical limits of the game, making it a primary target for server-side checks.
+## Overview
 
-*   **Advanced Calculations:** Anticheats calculate the exact distance between your hitbox and the enemy's hitbox at the millisecond your hit registers.
-*   **Lag Compensation:** While higher ping can sometimes make legitimate hits look long, anticheats account for latency. 
+Reach expands the physical bounds of your combat interactions, allowing you to hit entities from further away than normally possible, thus making it very susceptible to detections.
 
 ---
 
-:::tip
+## Detection Mechanics
 
-If you want a safer way to extend your hit distance, enable multipoint in AimAssist settings.  
-It aims to the closest point on your enemy's hitbox, letting you get perfect 3.0 block hits more often
+* **Hitbox Calculations:** Anticheats calculate the exact distance between your character's hitbox and the target's hitbox at the precise millisecond your hit packet arrives.
+* **Lag Compensation:** While high ping can occasionally cause legitimate hits to appear extended on your screen, server-side anticheats actively compensate for latency to filter out false positives and catch artificial reach instantly.
+
+---
+
+:::tip[A Safer Alternative]
+
+If you want a safe way to maximize your combat distance, enable **Multipoint** in your AimAssist settings. This feature targets the closest edge of your opponent's hitbox, helping you consistently land perfect 3.0-block vanilla hits without breaking game limits.
 
 :::

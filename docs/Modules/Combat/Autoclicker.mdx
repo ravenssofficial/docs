@@ -2,30 +2,34 @@
 id: Autoclicker
 title: Autoclicker
 sidebar_label: Autoclicker
-description: Automatically clicks for you
+description: Automatically clicks to let you focus on movement and aim
 ---
 
 # Autoclicker <a href="/realravenss-docs/#our-safety-rating-system" style={{textDecoration: 'none'}}><span style={{backgroundColor: '#1e1e2e', color: '#10b981', padding: '3px 8px', borderRadius: '12px', fontSize: '0.35em', verticalAlign: 'super', marginLeft: '8px', border: '1px solid #10b981', fontWeight: 'bold', display: 'inline-flex', alignItems: 'center', gap: '5px', cursor: 'pointer'}}><img src="/realravenss-docs/img/safe.svg" style={{width: '20px', height: '20px', display: 'block'}} /> Safe</span></a>
 
-
 <div className="hero__subtitle" style={{fontSize: '1.15rem', color: '#a1a1aa', lineHeight: '1.6', marginBottom: '2rem'}}>
-  Automatically clicks for you so you can focus entirely on your movement and aim.
+  Automatically registers attack inputs, allowing you to focus entirely on positioning, spacing, and aiming.
 </div>
 
 ---
 
-### Detection & CPS Limits
+## Overview
 
-How high you can push your CPS heavily depends on the **anticheat leniency** of the server you are playing on. Some older or more relaxed anticheats will let you click as fast as you want, while modern ones have strict heuristic checks that analyze your clicking patterns.
-
-*   **Recommended settings:** To stay safe on strict servers, always keep a gap of at least **4 CPS** between your minimum and maximum limits (e.g., 10-14 CPS).
-*   **Fixated CPS:** If your client does not let you pick a CPS range, you should enable every available randomization setting, especially if the anticheat you're on has stricter autoclicker checks.
-*   **Anticheat Leniency:** Most modern anticheats have strict autoclicker checks. A major exception is Hypixel's Watchdog, which doesn't check for click randomization at all, meaning you can safely use any value under 20 CPS without getting flagged.
+Autoclicker automates your left-click inputs to deliver consistent attack speeds during PvP. Since it operates by sending standard client-side click packets, it is structurally safe from direct server-side packet bans. However, detection entirely depends on your configured CPS (Clicks Per Second) limits and how well your client randomizes the delays between clicks.
 
 ---
 
-:::tip 
+## Mechanics & Configuration
 
-If your client has a **Butterfly** or **Simulate Double Clicks** mode, turn it on. This is essential if you want to push for 16+ CPS on strict servers because it mimics how real mouse switches double-register when double clicking. If your client lacks these simulation settings, do not go over 15 CPS.
+* **CPS Customization:** The maximum safe CPS you can run is determined by server-side anticheat checks. Strict heuristic engines analyze click consistency to flag unnatural patterns.
+* **Randomization Ranges:** On strict servers, always maintain a gap of at least **4 CPS** between your minimum and maximum limits (e.g., 10–14 CPS) to break up consistency.
+* **Static CPS Profiles:** If your client only supports a fixed CPS value, enable every available randomization to prevent detections.
+* **Hypixel Watchdog Leniency:** Hypixel is a notable exception regarding click heuristics; its anticheat does not actively analyze click-delay randomization, allowing you to safely use static configurations up to 20 CPS.
+
+---
+
+:::tip[Double Click Simulation]
+
+If your client features a **Butterfly Click** or **Simulate Double Clicks** option, enable it. This setting is crucial for bypassing advanced heuristic checks at speeds above 15 CPS, as it mimics the physical double-registration of mechanical mouse switches. If your client lacks double-click simulation, limit your speed to a maximum of 14 CPS.
 
 :::

@@ -2,30 +2,35 @@
 id: AimAssist
 title: AimAssist
 sidebar_label: AimAssist
-description: Smoothly helps you aim to the target
+description: Smoothly assists your aim toward targets
 ---
 
 # AimAssist <a href="/realravenss-docs/#our-safety-rating-system" style={{textDecoration: 'none'}}><span style={{backgroundColor: '#1e1e2e', color: '#10b981', padding: '3px 8px', borderRadius: '12px', fontSize: '0.35em', verticalAlign: 'super', marginLeft: '8px', border: '1px solid #10b981', fontWeight: 'bold', display: 'inline-flex', alignItems: 'center', gap: '5px', cursor: 'pointer'}}><img src="/realravenss-docs/img/safe.svg" style={{width: '20px', height: '20px', display: 'block'}} /> Safe</span></a>
 
 <div className="hero__subtitle" style={{fontSize: '1.15rem', color: '#a1a1aa', lineHeight: '1.6', marginBottom: '2rem'}}>
-  Helps you maintain your crosshair on the target by smoothly adjusting its position.
+  Helps you maintain your crosshair on targets by smoothly and naturally adjusting your camera position.
 </div>
 
 ---
 
-### Detection & Mechanics
+## Overview
 
-This module is completely undetectable as long as you play with reasonable settings. 
+AimAssist provides subtle, client-side camera adjustments to keep your crosshair locked onto opponents during combat. Unlike blatant combat modules, AimAssist is designed to work alongside your manual mouse movements, making your tracking look completely legit. 
 
-*   **Sensitivity Scaling:** On some clients, AimAssist scales directly with your in-game sensitivity to calculate the speed.
-*   **Anticheat Checks:** Modern anticheats flag players who constantly lock onto the exact center of a hitbox or the closest point perfectly.
-*   **How to stay safe:** If your client has the option, set the minimal angle for aiming to ~15°.
+Because the module only generates simulated mouse movements on your screen and does not bypass any vanilla limitations or send invalid rotation packets to the server, it is completely undetectable by server-side anticheat engines.
 
 ---
 
-:::warning
+## Mechanics
 
-AimAssist is designed to assist your natural aiming, not play the game for you.  
-Using overly aggressive settings and not being careful can still lead to staff bans.
+* **Sensitivity Scaling:** On most clients, the module scales directly with your in-game sensitivity to calculate the actual aiming speed.
+* **Targeting Angles:** If your client supports it, restricting the minimal aiming angle to around ~15° prevents detections on very advanced anticheats.
+
+---
+
+:::warning[Safety]
+
+Make sure to use the module to help you aim, rather than aim for you.  
+Using it as an AimBot will be obvious to staff and sometimes even anticheats.
 
 :::
