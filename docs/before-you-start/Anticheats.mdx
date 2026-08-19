@@ -21,19 +21,19 @@ Most anticheats won't instantly ban you after your violation level reaches a cer
 
 ## Check Types
 
-Regardless of their architecture, anticheats process player data using two fundamental types of checks:
+Anticheats process player data using two fundamental types of checks:
 
 ### Direct Checks (Hard Checks)
 
 Direct checks monitor actions that are physically impossible in vanilla Minecraft under any network conditions.
 
-* **How they work:** These checks continuously measure strict limits like maximum reach distance and knockback. Because these events cannot occur naturally, direct checks carry near-zero false-positive rates and result in instant hit cancellation, rubberbanding, or bans.
+* **How they work:** These checks continuously measure strict limits like maximum reach distance and knockback. Because these events cannot occur naturally, direct checks are very reliable and result in instant hit cancellation, rubberbanding, or bans.
 
 ### Heuristic Checks (Soft Checks)
 
 Heuristic checks analyze patterns, trends, and behavioral anomalies over time rather than evaluating single events.
 
-* **How they work:** These checks evaluate hit consistency, rotation randomness, click patterns, and network behavior (such as convenient lag during BackTrack). These checks help anticheats distinguish between real lag spikes and convenient lag.
+* **How they work:** These checks evaluate randomization for various actions and network behavior (such as convenient ping spikes with BackTrack). These checks help anticheats distinguish between convenient lag and cheats.
 
 :::note
 
@@ -67,6 +67,6 @@ Some servers prefer not to let cheaters know they have been caught immediately.
 
 :::warning[Mitigations]
 
-Modern anticheats don't always ban you instantly. Instead, many top-tier servers use **mitigations** to silently degrade your gameplay after a flag. If you trigger certain checks, the anticheat might reduce your damage output or alter your knockback taken. If you suddenly feel like you can't trade hits or deal damage, you are likely being mitigated by the server.
+Modern anticheats don't always ban you. Instead, many top-tier servers use **mitigations** to silently degrade your gameplay after a flag. If you trigger certain checks, the anticheat might reduce your damage output or alter your knockback taken. If you suddenly feel like you can't trade hits or deal damage, you are likely being mitigated by the server.
 
 :::
