@@ -5,7 +5,7 @@ sidebar_label: Backtrack
 description: Lags other players when they move out of range to get extra hits
 ---
 
-# Backtrack <a href="/realravenss-docs/#our-safety-rating-system" style={{textDecoration: 'none'}}><span style={{backgroundColor: '#1e1e2e', color: '#f1c40f', padding: '3px 8px', borderRadius: '12px', fontSize: '0.35em', verticalAlign: 'super', marginLeft: '8px', border: '1px solid #f1c40f', fontWeight: 'bold', display: 'inline-flex', alignItems: 'center', gap: '5px', cursor: 'pointer'}}><img src="/realravenss-docs/img/risky.svg" style={{width: '20px', height: '20px', display: 'block'}} /> Risky</span></a>
+# Backtrack <a href="/docs/#our-safety-rating-system" style={{textDecoration: 'none'}}><span style={{backgroundColor: '#1e1e2e', color: '#f1c40f', padding: '3px 8px', borderRadius: '12px', fontSize: '0.35em', verticalAlign: 'super', marginLeft: '8px', border: '1px solid #f1c40f', fontWeight: 'bold', display: 'inline-flex', alignItems: 'center', gap: '5px', cursor: 'pointer'}}><img src="/docs/img/risky.svg" style={{width: '20px', height: '20px', display: 'block'}} /> Risky</span></a>
 
 <div className="hero__subtitle" style={{fontSize: '1.15rem', color: '#a1a1aa', lineHeight: '1.6', marginBottom: '2rem'}}>
   Manipulates network packets to freeze players in their past positions, letting you land hits even after they move away.
@@ -15,17 +15,16 @@ description: Lags other players when they move out of range to get extra hits
 
 ## Overview
 
-Backtrack works by delaying incoming entity packets from the server, causing other players to appear completely frozen or lagged in place just as they are about to move out of your reach. Because your client hits their "delayed" hitboxes, you can chain additional hits that would normally be impossible.
+Backtrack works by delaying incoming entity packets from the server, causing other players to appear completely frozen or lagged in place just as they are about to move out of your reach. Because you hit their "delayed" hitboxes, you can chain additional hits that would normally be impossible.
 
-Since this module is fully lag-based and technically utilizes native network mechanics, it does not violate vanilla Minecraft reach limits on paper, making it a safer alternative for servers where regular reach cheats are heavily patched.
+Since this module is fully lag-based and technically replicates a laggy player, it does not violate vanilla Minecraft reach limits on paper, making it a safer alternative for servers where regular reach is patched.
 
 ---
 
-:::warning[Detection & Safety]
+:::warning[Heuristical Detections]
 
-Although it was rarely detected in 2023 and before, all relevant modern anticheats will now flag you for using Backtrack if your settings are too aggressive. Modern checks easily analyze packet delays and hit timing discrepancies. 
-
-However, it is still considered **significantly safer than traditional Reach modules**, as it mimics natural network latency rather than directly modifying your combat distance.
+Although it was rarely detected before 2024, most top tier anticheats can detect this module easily on high settings.
+However, it is still considered **significantly safer** than traditional Reach modules, as it only mimics lag.
 
 :::
 
@@ -33,7 +32,6 @@ However, it is still considered **significantly safer than traditional Reach mod
 
 :::danger[Manual Backtrack]
 
-**Manual Backtrack** does not modify your actual connection packets, which causes modern anticheats to detect your attacks as traditional **Reach** or **Hitbox** modifications.   
-To reduce detection rates, always use **Lag-Based Backtrack** instead.
+**Manual (i.e. reach-based) Backtrack** does not modify your actual connection packets, which causes modern anticheats to detect your attacks as traditional Reach or Hitbox modifications. always use **Lag-Based Backtrack** instead.
 
 :::

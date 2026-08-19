@@ -5,7 +5,7 @@ sidebar_label: Blink
 description: Simulates lag to teleport from the perspective of other players
 ---
 
-# Blink <a href="/realravenss-docs/#our-safety-rating-system" style={{textDecoration: 'none'}}><span style={{backgroundColor: '#1e1e2e', color: '#f1c40f', padding: '3px 8px', borderRadius: '12px', fontSize: '0.35em', verticalAlign: 'super', marginLeft: '8px', border: '1px solid #f1c40f', fontWeight: 'bold', display: 'inline-flex', alignItems: 'center', gap: '5px', cursor: 'pointer'}}><img src="/realravenss-docs/img/risky.svg" style={{width: '20px', height: '20px', display: 'block'}} /> Risky</span></a>
+# Blink <a href="/docs/#our-safety-rating-system" style={{textDecoration: 'none'}}><span style={{backgroundColor: '#1e1e2e', color: '#f1c40f', padding: '3px 8px', borderRadius: '12px', fontSize: '0.35em', verticalAlign: 'super', marginLeft: '8px', border: '1px solid #f1c40f', fontWeight: 'bold', display: 'inline-flex', alignItems: 'center', gap: '5px', cursor: 'pointer'}}><img src="/docs/img/risky.svg" style={{width: '20px', height: '20px', display: 'block'}} /> Risky</span></a>
 
 <div className="hero__subtitle" style={{fontSize: '1.15rem', color: '#a1a1aa', lineHeight: '1.6', marginBottom: '2rem'}}>
   Temporarily chokes network packets, making you appear stationary before instantly teleporting to your new location.
@@ -15,7 +15,7 @@ description: Simulates lag to teleport from the perspective of other players
 
 ## Overview
 
-Blink intercepts and holds back all movement packets sent from your client to the server. While active, other players see your character frozen in place, allowing you to safely move to a different position. When deactivated, the module releases all accumulated packets at once, causing you to instantly "blink" or teleport to your current coordinates from the perspective of everyone else.
+Blink intercepts and holds back all packets sent from your client to the server. While active, other players see your character frozen in place, allowing you to safely move to a different position. When deactivated, the module releases all accumulated packets at once, causing you to instantly "blink" or teleport to your current coordinates from the perspective of everyone else.
 
 ---
 

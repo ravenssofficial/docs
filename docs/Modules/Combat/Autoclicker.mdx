@@ -5,31 +5,35 @@ sidebar_label: Autoclicker
 description: Automatically clicks to let you focus on movement and aim
 ---
 
-# Autoclicker <a href="/realravenss-docs/#our-safety-rating-system" style={{textDecoration: 'none'}}><span style={{backgroundColor: '#1e1e2e', color: '#10b981', padding: '3px 8px', borderRadius: '12px', fontSize: '0.35em', verticalAlign: 'super', marginLeft: '8px', border: '1px solid #10b981', fontWeight: 'bold', display: 'inline-flex', alignItems: 'center', gap: '5px', cursor: 'pointer'}}><img src="/realravenss-docs/img/safe.svg" style={{width: '20px', height: '20px', display: 'block'}} /> Safe</span></a>
+# Autoclicker <a href="/docs/#our-safety-rating-system" style={{textDecoration: 'none'}}><span style={{backgroundColor: '#1e1e2e', color: '#10b981', padding: '3px 8px', borderRadius: '12px', fontSize: '0.35em', verticalAlign: 'super', marginLeft: '8px', border: '1px solid #10b981', fontWeight: 'bold', display: 'inline-flex', alignItems: 'center', gap: '5px', cursor: 'pointer'}}><img src="/docs/img/safe.svg" style={{width: '20px', height: '20px', display: 'block'}} /> Safe</span></a>
 
 <div className="hero__subtitle" style={{fontSize: '1.15rem', color: '#a1a1aa', lineHeight: '1.6', marginBottom: '2rem'}}>
-  Automatically registers attack inputs, allowing you to focus entirely on positioning, spacing, and aiming.
+  Automatically clicks for you, allowing you to focus entirely on positioning, spacing, and aiming.
 </div>
 
 ---
 
 ## Overview
 
-Autoclicker automates your left-click inputs to deliver consistent attack speeds during PvP. Since it operates by sending standard client-side click packets, it is structurally safe from direct server-side packet bans. However, detection entirely depends on your configured CPS (Clicks Per Second) limits and how well your client randomizes the delays between clicks.
+Autoclicker automates your left click inputs to deliver consistent CPS. Since it operates by clicking for you, it is structurally safe from direct checks. However, detection entirely depends on your configured CPS (Clicks Per Second) limits and how well your client randomizes the delays between clicks.
 
 ---
 
 ## Mechanics & Configuration
 
-* **CPS Customization:** The maximum safe CPS you can run is determined by server-side anticheat checks. Strict heuristic engines analyze click consistency to flag unnatural patterns.
+* **CPS Customization:** The maximum safe CPS you can run is determined by server-side anticheat checks. Some servers don't even check for consistency below a certain value.
 * **Randomization Ranges:** On strict servers, always maintain a gap of at least **4 CPS** between your minimum and maximum limits (e.g., 10–14 CPS) to break up consistency.
-* **Static CPS Profiles:** If your client only supports a fixed CPS value, enable every available randomization to prevent detections.
-* **Hypixel Watchdog Leniency:** Hypixel is a notable exception regarding click heuristics; its anticheat does not actively analyze click-delay randomization, allowing you to safely use static configurations up to 20 CPS.
+* **Fixed CPS:** If your client only supports a fixed CPS value, enable every available randomization to prevent detections.
 
+:::note[Hypixel]
+
+Hypixel is a notable exception regarding CPS checks, its' anticheat does not actively analyze click-delay randomization, allowing you to safely use no randimzation up to 20 CPS, although we recommend using ~15 CPS for best hit registration.
+
+:::
 ---
 
 :::tip[Double Click Simulation]
 
-If your client features a **Butterfly Click** or **Simulate Double Clicks** option, enable it. This setting is crucial for bypassing advanced heuristic checks at speeds above 15 CPS, as it mimics the physical double-registration of mechanical mouse switches. If your client lacks double-click simulation, limit your speed to a maximum of 14 CPS.
+If your client features a **Butterfly Click** or **Simulate Double Clicks** option, enable it. This setting is crucial for bypassing advanced checks at speeds above 15 CPS, as it mimics the physical double-registration of mechanical mouse switches. If your client lacks double-click simulation, limit your speed to a maximum of 15 CPS on strict anticheats.
 
 :::

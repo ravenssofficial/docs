@@ -2,7 +2,7 @@
 id: Anticheats
 title: Anticheats
 sidebar_label: Anticheats
-description: Types of anticheats, how they work, and how to bypass them
+description: Types of anticheats, how they work, check classifications, and mitigation mechanics
 ---
 
 # Anticheats
@@ -13,39 +13,60 @@ description: Types of anticheats, how they work, and how to bypass them
 
 :::warning[Delayed Bans]
 
-Most anticheats won't instantly ban you after your violation level reaches a certain amount.  
-Instead, they will delay your ban by some time to make it harder to figure out what got you banned.
+Most anticheats won't instantly ban you after your violation level reaches a certain threshold. Instead, they delay your ban by minutes or hours to prevent you from pinpointing the exact setting or module that triggered the flag.
 
 :::
 
 ---
 
-### Anticheat Classifications
+## Check Types
 
-While server-side anticheats have evolved, most modern ones fall into three primary categories based on how they process player data and handle violations:
+Regardless of their architecture, anticheats process player data using two fundamental types of checks:
 
-#### 1. Active Anticheats
-This is the traditional style of anticheat, commonly seen in older systems like **NCP (NoCheatPlus)**, **Vulcan**, and older iterations of **Watchdog**. Instead of silently tracking you, they immediately react to cheats in real-time.
+### Direct Checks (Hard Checks)
+
+Direct checks monitor actions that are physically impossible in vanilla Minecraft under any network conditions.
+
+* **How they work:** These checks continuously measure strict limits like maximum reach distance and knockback. Because these events cannot occur naturally, direct checks carry near-zero false-positive rates and result in instant hit cancellation, rubberbanding, or bans.
+
+### Heuristic Checks (Soft Checks)
+
+Heuristic checks analyze patterns, trends, and behavioral anomalies over time rather than evaluating single events.
+
+* **How they work:** These checks evaluate hit consistency, rotation randomness, click patterns, and network behavior (such as convenient lag during BackTrack). These checks help anticheats distinguish between real lag spikes and convenient lag.
+
+:::note
+
+Hypixel's Watchdog rarely relies on heuristic checks, unlike top tier anticheats such as Polar.
+
+:::
+
+---
+
+## Anticheat Classifications
+
+Most modern systems fall into three primary categories based on how they process player data and handle violations:
+
+### 1. Active Anticheats
+This is the traditional style of anticheat, commonly seen in systems like **NCP (NoCheatPlus)**, **Vulcan**, and older versions of **Watchdog**. Instead of silently tracking you, they immediately react to violations in real-time.
 
 * **How they work:** The server monitors incoming packets and rejects any actions that exceed standard limits, such as moving too fast or reaching too far. If a violation is caught, the server drops that packet and forces your client back to its last recorded legal coordinates.
-* **The Flag:** This creates the infamous **rubberbanding** effect where you get dragged back and glitch in place. In combat, it results in silent hit-cancellation, meaning your hits simply won't register if you trigger a reach, hitbox or rotation check.
 
-#### 2. Prediction-Based Anticheats
-These are currently the most popular and effective solutions in the PvP scene, with **Watchdog** and **Polar** being the most known. 
-* **How they work:** Instead of just checking if you are moving too fast, the server runs a parallel simulation of the Minecraft physics engine. It predicts exactly where your character should be on the next tick based on your inputs.
-* **The Flag:** If your actual position, velocity, or movement packets deviate even slightly from the server's predicted path, you will trigger a flag.
+### 2. Prediction-Based Anticheats
+These are currently the most effective solutions in the PvP scene, with **Watchdog** and **Polar** being the most prominent examples.
 
-#### 3. Silent Anticheats
-Some servers prefer not to let cheaters know they've been caught immediately.
-* **How they work:** Instead of dragging you back or cancelling your hits the moment you flag, these checks run completely silently in the background.
-* **The Bans:** Every violation increases your internal violation level (VL). Once it crosses a certain threshold, your account is banned.
+* **How they work:** Instead of just checking whether you are moving too fast, the server runs a parallel simulation of the Minecraft physics engine. It predicts exactly where your character should be on the next tick based on your inputs.
+If your actual position, velocity, or movement packets deviate even slightly from the server's predicted path, you trigger a flag and the server corrects your movement.
+
+### 3. Silent Anticheats
+Some servers prefer not to let cheaters know they have been caught immediately.
+
+* **How they work:** Instead of dragging you back or cancelling your hits the moment you flag, these checks run completely silently in the background. Every violation increases your internal violation level (VL). Once it crosses a set threshold, your account is queued for a delayed ban.
 
 ---
 
 :::warning[Mitigations]
 
-Modern anticheats don't always ban you instantly. Instead, many top-tier servers now use **mitigations** to silently ruin your gameplay after a flag. 
-If you trigger certain checks, the anticheat might reduce your damage output so your hits deal barely any damage.  
-If you suddenly feel like you can't trade hits or do damage, you are likely being mitigated by the server.
+Modern anticheats don't always ban you instantly. Instead, many top-tier servers use **mitigations** to silently degrade your gameplay after a flag. If you trigger certain checks, the anticheat might reduce your damage output or alter your knockback taken. If you suddenly feel like you can't trade hits or deal damage, you are likely being mitigated by the server.
 
 :::

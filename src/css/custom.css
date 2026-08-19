@@ -3,9 +3,8 @@
  * have been customized for a dark/purple gradient aesthetic.
  */
 
-/* globalne varijable za ceo sajt */
 :root {
-  --ifm-color-primary: #a855f7; /* neon ljubičasta */
+  --ifm-color-primary: #a855f7;
   --ifm-color-primary-dark: #9333ea;
   --ifm-color-primary-darker: #7e22ce;
   --ifm-color-primary-darkest: #6b21a8;
@@ -16,27 +15,23 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
-/* podešavanja za dark mod */
 [data-theme='dark'] {
-  --ifm-background-color: #000000 !important; /* skroz crna pozadina */
-  --ifm-navbar-background-color: #09090b !important; /* tamna navigacija na vrhu */
-  --ifm-menu-color: #a1a1aa !important; /* siva slova u meniju sa strane */
-  --ifm-menu-color-active: #c084fc !important; /* svetlo ljubičasta za aktivnu stranu */
+  --ifm-background-color: #000000 !important; 
+  --ifm-navbar-background-color: #09090b !important;
+  --ifm-menu-color: #a1a1aa !important;
+  --ifm-menu-color-active: #c084fc !important;
   --ifm-menu-color-background-active: rgba(168, 85, 247, 0.15) !important;
   --ifm-heading-color: #fafafa !important;
   --ifm-toc-link-color: #71717a !important;
 
-  /* SREĐIVANJE KARTICA - tamna pozadina umesto agresivne sive */
   --ifm-card-background-color: #09090b !important;
 
-  /* Menjamo docusaurus sive varijable za footer unutar dark moda */
   --ifm-footer-background-color: #09090b !important;
   --ifm-footer-color: #52525b !important;
   --ifm-footer-link-color: #71717a !important;
   --ifm-footer-link-hover-color: #c084fc !important;
 }
 
-/* Dodatno fino podešavanje za ivice kartica da se savršeno uklope */
 [data-theme='dark'] .card {
   border: 1px solid #18181b !important;
   border-radius: 8px !important;
@@ -44,17 +39,16 @@
 }
 
 [data-theme='dark'] .card:hover {
-  background-color: #121214 !important; /* blago svetlija na hover */
-  border-color: rgba(168, 85, 247, 0.3) !important; /* suptilan ljubičasti sjaj na hover */
+  background-color: #121214 !important;
+  border-color: rgba(168, 85, 247, 0.3) !important;
 }
 
-/* SREĐIVANJE TABOVA - agresivna siva leti napolje */
 [data-theme='dark'] .tabs {
   border-bottom: 1px solid #18181b !important;
 }
 
 [data-theme='dark'] .tabs__item {
-  color: #52525b !important; /* mnogo tamnija, suptilna siva za neaktivne */
+  color: #52525b !important;
   padding: 0.6rem 1.2rem !important;
   font-weight: 500 !important;
   background-color: transparent !important;
@@ -66,12 +60,11 @@
 }
 
 [data-theme='dark'] .tabs__item--active {
-  color: #c084fc !important; /* aktivni tab dobija tvoju ljubičastu */
+  color: #c084fc !important;
   border-bottom-color: #a855f7 !important;
   background-color: transparent !important;
 }
 
-/* SREĐIVANJE FOOTERA - kompletno stapanje i tamniji tekst */
 [data-theme='dark'] .footer {
   background-color: #09090b !important;
   border-top: 1px solid #18181b !important;
@@ -92,7 +85,6 @@
   color: #c084fc !important;
 }
 
-/* bolesni gradient za glavne dugmiće na početnoj */
 .button--primary {
   background: linear-gradient(135deg, #a855f7 0%, #6b21a8 100%) !important;
   border: none !important;
@@ -106,12 +98,10 @@
   box-shadow: 0 6px 20px rgba(168, 85, 247, 0.6);
 }
 
-/* dodavanje gradient linije na vrhu navigacije */
 .navbar {
   border-bottom: 1px solid rgba(168, 85, 247, 0.2);
 }
 
-/* ulepšavanje koda unutar dokumentacije */
 code {
   background-color: #18181b !important;
   border: 1px solid #27272a !important;
@@ -127,27 +117,25 @@ code {
   display: none !important;
 }
 
-/* Sređivanje aktivnog linka - isključivo na krajnjim fajlovima (izbacuje kategorije/foldere) */
 .menu__list-item:not(.menu__list-item--category) > .menu__link--active {
   position: relative !important;
-  padding-left: 24px !important; /* pravi prostor za pilulu */
+  padding-left: 24px !important;
   transition: all 0.2s ease-in-out;
 }
 
-/* Pravljenje vertikalne pilule samo za aktivne fajlove */
 .menu__list-item:not(.menu__list-item--category) > .menu__link--active::before {
   content: "";
   position: absolute;
-  left: 8px; /* pozicija pilule unutar kontejnera */
+  left: 8px;
   top: 50%;
   transform: translateY(-50%);
-  width: 4px; /* debljina pilule */
-  height: 16px; /* visina pilule */
-  background-color: #c084fc !important; /* koristi tvoju aktivnu svetlo ljubičastu boju */
-  border-radius: 99px !important; /* skroz zaobljene ivice */
+  width: 4px; 
+  height: 16px; 
+  background-color: #c084fc !important;
+  border-radius: 99px !important;
 }
 
-/* Hover efekat za linkove u meniju */
+
 .menu__link:hover {
   background-color: rgba(255, 255, 255, 0.05) !important;
 }

@@ -5,7 +5,7 @@ sidebar_label: Reach
 description: Extends your maximum attack distance
 ---
 
-# Reach <a href="/realravenss-docs/#our-safety-rating-system" style={{textDecoration: 'none'}}><span style={{backgroundColor: '#1e1e2e', color: '#ef4444', padding: '3px 8px', borderRadius: '12px', fontSize: '0.35em', verticalAlign: 'super', marginLeft: '8px', border: '1px solid #ef4444', fontWeight: 'bold', display: 'inline-flex', alignItems: 'center', gap: '5px', cursor: 'pointer'}}><img src="/realravenss-docs/img/blatant.svg" style={{width: '20px', height: '20px', display: 'block'}} /> Blatant</span></a>
+# Reach <a href="/docs/#our-safety-rating-system" style={{textDecoration: 'none'}}><span style={{backgroundColor: '#1e1e2e', color: '#ef4444', padding: '3px 8px', borderRadius: '12px', fontSize: '0.35em', verticalAlign: 'super', marginLeft: '8px', border: '1px solid #ef4444', fontWeight: 'bold', display: 'inline-flex', alignItems: 'center', gap: '5px', cursor: 'pointer'}}><img src="/docs/img/blatant.svg" style={{width: '20px', height: '20px', display: 'block'}} /> Blatant</span></a>
 
 <div className="hero__subtitle" style={{fontSize: '1.15rem', color: '#a1a1aa', lineHeight: '1.6', marginBottom: '2rem'}}>
   Extends your maximum attack range beyond the default vanilla limit.
@@ -13,7 +13,7 @@ description: Extends your maximum attack distance
 
 ---
 
-:::danger[High Detection Risk]
+:::danger
 
 This module is trivial to detect on every modern anticheat at virtually any value.  
 To keep your account safe, it is strongly recommended to avoid using this module entirely.
@@ -31,12 +31,12 @@ Reach expands the physical bounds of your combat interactions, allowing you to h
 ## Detection Mechanics
 
 * **Hitbox Calculations:** Anticheats calculate the exact distance between your character's hitbox and the target's hitbox at the precise millisecond your hit packet arrives.
-* **Lag Compensation:** While high ping can occasionally cause legitimate hits to appear extended on your screen, server-side anticheats actively compensate for latency to filter out false positives and catch artificial reach instantly.
+* **Lag Compensation:** While high ping can occasionally cause legitimate hits to appear extended on your screen, anticheats actively compensate for latency to filter out false positives.
 
 ---
 
 :::tip[A Safer Alternative]
 
-If you want a safe way to maximize your combat distance, enable **Multipoint** in your AimAssist settings. This feature targets the closest edge of your opponent's hitbox, helping you consistently land perfect 3.0-block vanilla hits without breaking game limits.
+If you want a safe way to maximize your combat distance, enable **Multipoint** in your [AimAssist](/docs/Modules/Combat/AimAssist) settings. This feature targets the closest point on your opponent's hitbox, helping you consistently land perfect 3 block vanilla hits without breaking game limits.
 
 :::

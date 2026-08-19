@@ -5,19 +5,11 @@ sidebar_label: Lag Range
 description: Uses simulated latency to keep you out of your opponent's range
 ---
 
-# Lag Range <a href="/realravenss-docs/#our-safety-rating-system" style={{textDecoration: 'none'}}><span style={{backgroundColor: '#1e1e2e', color: '#f1c40f', padding: '3px 8px', borderRadius: '12px', fontSize: '0.35em', verticalAlign: 'super', marginLeft: '8px', border: '1px solid #f1c40f', fontWeight: 'bold', display: 'inline-flex', alignItems: 'center', gap: '5px', cursor: 'pointer'}}><img src="/realravenss-docs/img/risky.svg" style={{width: '20px', height: '20px', display: 'block'}} /> Risky</span></a>
+# Lag Range <a href="/docs/#our-safety-rating-system" style={{textDecoration: 'none'}}><span style={{backgroundColor: '#1e1e2e', color: '#f1c40f', padding: '3px 8px', borderRadius: '12px', fontSize: '0.35em', verticalAlign: 'super', marginLeft: '8px', border: '1px solid #f1c40f', fontWeight: 'bold', display: 'inline-flex', alignItems: 'center', gap: '5px', cursor: 'pointer'}}><img src="/docs/img/risky.svg" style={{width: '20px', height: '20px', display: 'block'}} /> Risky</span></a>
 
 <div className="hero__subtitle" style={{fontSize: '1.15rem', color: '#a1a1aa', lineHeight: '1.6', marginBottom: '2rem'}}>
   Manipulates your network packets during combat exchanges to keep your character model just out of your opponent's hitting range.
 </div>
-
----
-
-:::info[Alternative Names]
-
-On Vape V4, this functionality can be achieved by enabling the **Dynamic** mode within the [FakeLag](/realravenss-docs/Modules/Network/FakeLag) module.
-
-:::
 
 ---
 
@@ -32,5 +24,11 @@ While similar to Backtrack, Lag Range is significantly more difficult to detect 
 :::danger[Hypixel Mitigation Patch]
 
 Just like with other packet-choking modules, Hypixel has fully mitigated this behavior. The server forces delayed movement packets to process in short, metered bursts instead of executing them all at once. This forces your client to catch up smoothly to your actual coordinates, completely eliminating any spacing or reach advantage.
+
+:::
+
+:::info[Alternative Names]
+
+On Vape V4, this functionality can be achieved by enabling the **Dynamic** mode within the [FakeLag](/docs/Modules/Network/FakeLag) module.
 
 :::

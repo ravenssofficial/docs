@@ -8,8 +8,8 @@ export default function AdmonitionIconDanger(props) {
         width: '24px',
         height: '24px',
         backgroundColor: '#ffffff', // tvoja svetlo crvena boja
-        WebkitMaskImage: `url('/realravenss-docs/img/skull.svg')`,
-        maskImage: `url('/realravenss-docs/img/skull.svg')`,
+        WebkitMaskImage: `url('/docs/img/skull.svg')`,
+        maskImage: `url('/docs/img/skull.svg')`,
         WebkitMaskRepeat: 'no-repeat',
         maskRepeat: 'no-repeat',
         WebkitMaskSize: 'contain',
